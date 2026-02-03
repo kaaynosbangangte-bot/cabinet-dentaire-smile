@@ -45,14 +45,14 @@ function FAQ() {
                             <div className="faq-contact-icon"><FiPhone /></div>
                             <div>
                                 <strong>Téléphone</strong>
-                                <span>01 23 45 67 89</span>
+                                <span>+237 233 44 45 68</span>
                             </div>
                         </div>
                         <div className="faq-contact-item">
                             <div className="faq-contact-icon"><FiMail /></div>
                             <div>
                                 <strong>Email</strong>
-                                <span>contact@smile.fr</span>
+                                <span>cabinetssmile@yahoo.com</span>
                             </div>
                         </div>
                     </div>

@@ -4,52 +4,52 @@ const servicesData = [
     {
         title: "Consultation & Diagnostic",
         description: "Une étape cruciale pour identifier vos besoins. Nous réalisons un examen complet, des radiographies numériques si nécessaire, et élaborons un plan de traitement personnalisé adapté à votre situation unique.",
-        image: "https://images.unsplash.com/photo-1629909608135-ca29ed97499d?w=800&q=80"
+        image: "/images/services/consultation-diagnostic.jpg"
     },
     {
         title: "Implantologie",
         description: "Retrouvez le confort et l'esthétique d'une dentition complète. Nous utilisons des implants de haute technologie pour remplacer les dents manquantes de manière durable et naturelle.",
-        image: "https://images.unsplash.com/photo-1606811841680-2826755169a4?w=800&q=80"
+        image: "/images/services/implantologie.jpg"
     },
     {
         title: "Blanchiment dentaire",
         description: "Redonnez de l'éclat à votre sourire. Nos techniques de blanchiment professionnel sont sûres, rapides et offrent des résultats visibles dès la première séance, tout en préservant l'émail de vos dents.",
-        image: "https://images.unsplash.com/photo-1593054981440-59bb144921de?w=800&q=80"
+        image: "/images/services/blanchiment-dentaire.jpg"
     },
     {
         title: "Soins & Prothèse Dentaire",
         description: "Expertise complète pour restaurer la fonction et l'esthétique. Qu'il s'agisse de couronnes, de ponts ou de prothèses amovibles, nous concevons des solutions sur mesure d'une qualité irréprochable.",
-        image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80"
+        image: "/images/services/prothese-dentaire.jpg"
     },
     {
         title: "Orthodontie",
         description: "Alignez vos dents en toute discrétion. Pour enfants et adultes, nous proposons des solutions modernes comme les bagues céramiques ou les aligneurs transparents pour un sourire harmonieux.",
-        image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"
+        image: "/images/services/orthodontie.jpg"
     },
     {
         title: "Pédodontie",
         description: "Des soins adaptés aux plus jeunes dans un environnement rassurant. Nous mettons tout en œuvre pour que la visite chez le dentiste soit une expérience positive pour vos enfants.",
-        image: "https://images.unsplash.com/photo-1463947628408-f8581a2f4acc?w=800&q=80"
+        image: "/images/services/pedodontie.jpg"
     },
     {
         title: "Chirurgie Traumatologie & Maxillo-faciale",
         description: "Expertise chirurgicale pour les cas complexes. Extractions de dents de sagesse, greffes osseuses et interventions spécialisées réalisées avec la plus grande précision et sécurité.",
-        image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&q=80"
+        image: "/images/services/chirurgie-maxillo.jpg"
     },
     {
         title: "Endodontie",
         description: "Sauvez vos dents naturelles. Spécialisés dans le traitement des canaux radiculaires, nous utilisons des microscopes opératoires pour assurer le succès de vos traitements endodontiques.",
-        image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80"
+        image: "/images/services/endodontie.jpg"
     },
     {
         title: "Radiologie Numérique",
         description: "Imagerie de pointe pour un diagnostic précis. Équipés de Cone Beam (Scanner 3D) et de panoramiques numériques, nous réduisons l'exposition aux rayons X tout en augmentant la précision.",
-        image: "https://images.unsplash.com/photo-1530497615580-498595d57431?w=800&q=80"
+        image: "/images/services/radiologie-numerique.jpg"
     },
     {
         title: "Odontologie Restauratrice",
         description: "Réparation discrète et esthétique des dents abîmées. Nous utilisons des matériaux composites de dernière génération pour traiter les caries et restaurer l'intégrité de vos dents.",
-        image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80"
+        image: "/images/services/odontologie-restauratrice.jpg"
     }
 ];
 

@@ -10,7 +10,7 @@ function Hero() {
     const slides = [
         {
             id: 1,
-            image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
+            image: '/images/hero/hero-1.png',
             subtitle: 'Souriez en toute confiance, chaque jour',
             title: 'Votre clinique dentaire pour des soins de qualité',
             description: 'Nous prenons soin de vous grâce à des traitements bucco dentaires modernes, sûrs et adaptés à toute la famille. Notre équipe de professionnels vous accompagne pour une santé bucco-dentaire durable.',
@@ -18,7 +18,7 @@ function Hero() {
         },
         {
             id: 2,
-            image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80',
+            image: '/images/hero/hero-2.jpg',
             subtitle: 'Technologie de pointe',
             title: 'Des équipements modernes pour votre confort',
             description: 'Nous utilisons les dernières innovations technologiques pour garantir des diagnostics précis et des traitements moins invasifs.',
@@ -26,7 +26,7 @@ function Hero() {
         },
         {
             id: 3,
-            image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1920&q=80',
+            image: '/images/hero/hero-3.jpg',
             subtitle: 'Équipe d\'experts',
             title: 'Des professionnels passionnés à votre écoute',
             description: 'Nos dentistes hautement qualifiés travaillent avec passion pour vous offrir le meilleur niveau de soin personnalisé.',

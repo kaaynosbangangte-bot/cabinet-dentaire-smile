@@ -7,25 +7,25 @@ import { FiStar } from 'react-icons/fi'
 function Testimonials() {
     const testimonials = [
         {
-            name: 'Marie Laurent',
-            role: 'Patiente depuis 2 ans',
-            text: 'Le Dr Meyer est d’un professionnalisme exemplaire. Mon traitement orthodontique se passe à merveille et toute l’équipe est au petit soin.',
+            name: 'Arlette',
+            role: 'Patiente',
+            text: 'Un cabinet très propre et parfaitement entretenu. On se sent en totale confiance.',
             rating: 5,
-            avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop'
+            avatar: '/images/testimonials/patient-1.jpg'
         },
         {
-            name: 'Thomas Dubois',
-            role: 'Soin Implantologie',
-            text: 'Je recommande vivement ce cabinet. La technologie utilisée est bluffante et le résultat de mes implants est parfait. Un grand merci.',
+            name: 'Patrick',
+            role: 'Patien',
+            text: ' Accueil impeccable et personnel très compétent. On se sent immédiatement à l’aise et en sécurité.',
             rating: 5,
-            avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop'
+            avatar: '/images/testimonials/patient-2.webp'
         },
         {
-            name: 'Sophie Martin',
-            role: 'Esthétique dentaire',
-            text: 'Un accueil chaleureux et une écoute attentive. Mon blanchiment dentaire a redonné de l’éclat à mon sourire. Je reviendrai sans hésiter.',
+            name: 'Michael',
+            role: 'Patient',
+            text: 'Une équipe accueillante et très professionnelle. Je me suis senti en confiance dès la première consultation.',
             rating: 5,
-            avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop'
+            avatar: '/images/testimonials/patient-3.jpeg'
         }
     ]
 

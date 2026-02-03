@@ -1,35 +1,35 @@
-import { FiActivity, FiSmile, FiShield, FiStar, FiHeart, FiUser } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 function Services() {
     const services = [
         {
-            icon: <FiActivity />,
+            image: '/images/consultation-diagnostic.jpg',
             title: 'Consultation & diagnostic',
             description: 'Examen complet de votre santé bucco-dentaire avec des équipements de pointe.'
         },
         {
-            icon: <FiSmile />,
+            image: '/images/orthodontie.jpg',
             title: 'Orthodontie',
             description: 'Appareils dentaires et aligneurs invisibles pour corriger votre dentition.'
         },
         {
-            icon: <FiShield />,
-            title: 'implantologie',
+            image: '/images/implantologie.jpg',
+            title: 'Implantologie',
             description: 'Implants dentaires durables pour remplacer les dents manquantes.'
         },
         {
-            icon: <FiStar />,
+            image: '/images/esthetique-dentaire.jpg',
             title: 'Esthétique dentaire',
             description: 'Blanchiment et facettes pour un sourire éclatant et harmonieux.'
         },
         {
-            icon: <FiHeart />,
-            title: 'Soins & Paradontologie',
+            image: '/images/soins-parodontologie.jpg',
+            title: 'Soins & Parodontologie',
             description: 'Nettoyage, détartrage et traitement des caries pour une hygiène optimale.'
         },
         {
-            icon: <FiUser />,
-            title: 'odontologie pédiatrique.',
+            image: '/images/odontologie-pediatrique.png',
+            title: 'Odontologie pédiatrique',
             description: 'Approche douce et rassurante pour les soins dentaires des plus jeunes.'
         }
     ]
@@ -53,7 +53,9 @@ function Services() {
                             data-aos="fade-up"
                             data-aos-delay={index * 100}
                         >
-                            <div className="service-icon-refined">{service.icon}</div>
+                            <div className="service-image-refined">
+                                <img src={service.image} alt={service.title} />
+                            </div>
                             <h3 className="service-card-title-refined">{service.title}</h3>
                             <p className="service-card-text-refined">{service.description}</p>
                         </div>
@@ -61,7 +63,7 @@ function Services() {
                 </div>
 
                 <div className="services-footer-refined">
-                    <a href="#contact" className="btn-services">Voire tout les services</a>
+                    <Link to="/services" className="btn-services">Voir tous les services</Link>
                 </div>
             </div>
         </section>

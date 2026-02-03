@@ -1,9 +1,13 @@
 import About from '../components/About'
 import Team from '../components/Team'
 import Testimonials from '../components/Testimonials'
-import { FiHeart, FiCheckCircle } from 'react-icons/fi'
+import { FiHeart, FiCheckCircle, FiChevronDown, FiChevronUp } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 function AboutPage() {
+    const [isExpanded, setIsExpanded] = useState(false)
+
     return (
         <div className="about-page">
             {/* Hero Section */}
@@ -22,11 +26,77 @@ function AboutPage() {
                             <h4>Qui sommes-nous ?</h4>
                             <h2>Une référence d'excellence en soins dentaires modernes</h2>
                             <p>
-                                Fondé en 2015, le Cabinet Dentaire Smile est né d'une volonté claire : offrir des soins dentaires d'excellence, alliant rigueur médicale, innovation technologique et approche humaine. Dès ses débuts, le cabinet s'est donné pour mission de placer le patient au cœur de notre exercice, en proposant un espace où rigueur médicale, innovation technologique et approche bienveillante se rencontrent.
+                                Fondé en 2015, le Cabinet Dentaire Smile est né d'une volonté claire : offrir des soins dentaires d'excellence, alliant rigueur médicale, innovation technologique et approche humaine. Dès ses débuts, le cabinet s'est donné pour mission de placer le patient au cœur de notre exercice, en bâtissant un espace où rigueur médicale, innovation technologique et approche bienveillante se rencontrent.
                             </p>
+                            
+                            {isExpanded && (
+                                <div className="history-expanded">
+                                    <p>
+                                        Aujourd'hui, forte de <strong>6 praticiens disponibles 24h/24 et 7j/7</strong>, secondés par une équipe d'assistantes dévouées, Smile garantit une continuité de soins — de jour comme de nuit — dans un cadre moderne, propre et accueillant.
+                                    </p>
+                                    
+                                    <p>
+                                        Pour raccourcir au maximum votre parcours de soins, nous avons réuni en un seul lieu :
+                                    </p>
+                                    <ul>
+                                        <li>5 unités de soins entièrement équipées</li>
+                                        <li>un laboratoire de prothèses dentaires</li>
+                                        <li>une unité de radiologie numérique</li>
+                                    </ul>
+                                    
+                                    <p>
+                                        Ce plateau technique complet nous permet une prise en charge globale, précise et efficace, allant de l'odontologie générale aux spécialités telles que l'implantologie, l'orthodontie ou les soins esthétiques.
+                                    </p>
+                                    
+                                    <p>
+                                        Notre philosophie repose sur deux engagements fondamentaux :<br />
+                                        <strong>prévenir plutôt que guérir</strong>, en accompagnant chaque patient dans une démarche de santé bucco-dentaire durable ;<br />
+                                        et <strong>redonner le sourire</strong>, au sens propre comme au figuré — pour que chacun reparte apaisé, confiant et satisfait.
+                                    </p>
+                                    
+                                    <p>
+                                        Accueil chaleureux, respect de votre temps, écoute active et suivi personnalisé sont les piliers de notre démarche qualité.
+                                    </p>
+                                    
+                                    <p>
+                                        Au nom de toute l'équipe du Cabinet Dentaire Smile, je vous souhaite la bienvenue. Ici, votre sourire est entre de bonnes mains — expertes, attentives et humaines.
+                                    </p>
+                                    
+                                    <p style={{ fontStyle: 'italic', marginTop: '1.5rem' }}>
+                                        Le Dr Boutchouang et l'équipe Smile
+                                    </p>
+                                </div>
+                            )}
+                            
+                            <button 
+                                onClick={() => setIsExpanded(!isExpanded)} 
+                                className="btn-read-more"
+                                style={{ 
+                                    marginTop: '1rem', 
+                                    display: 'flex', 
+                                    alignItems: 'center', 
+                                    gap: '0.5rem',
+                                    background: 'none',
+                                    border: 'none',
+                                    color: '#0066cc',
+                                    cursor: 'pointer',
+                                    fontSize: '1rem',
+                                    fontWeight: '500'
+                                }}
+                            >
+                                {isExpanded ? (
+                                    <>
+                                        Réduire <FiChevronUp />
+                                    </>
+                                ) : (
+                                    <>
+                                        Lire la suite <FiChevronDown />
+                                    </>
+                                )}
+                            </button>
                         </div>
                         <div className="about-who-image" data-aos="fade-left">
-                            <img src="https://images.unsplash.com/photo-1559839734-2b71f1536b1e?w=800&q=80" alt="Directeur du cabinet" />
+                            <img src="/images/about/directeur-cabinet.jpg" alt="Directeur du cabinet" />
                         </div>
                     </div>
                 </div>
@@ -37,7 +107,7 @@ function AboutPage() {
                 <div className="container">
                     <div className="choose-us-grid">
                         <div className="choose-us-image" data-aos="fade-right">
-                            <img src="https://images.unsplash.com/photo-1581056770613-22c608051797?w=800&q=80" alt="Accueil cabinet" style={{ borderRadius: '20px' }} />
+                            <img src="/images/about/accueil-cabinet.jpg" alt="Accueil cabinet" style={{ borderRadius: '20px' }} />
                         </div>
                         <div className="choose-us-text" data-aos="fade-left">
                             <h4>Pourquoi nous choisir ?</h4>
@@ -84,13 +154,13 @@ function AboutPage() {
                 <div className="container">
                     <div className="cta-split-container">
                         <div className="cta-split-image" data-aos="fade-right">
-                            <img src="https://images.unsplash.com/photo-1445527815219-ecbfec67492e?w=800&q=80" alt="Smile accueil" />
+                            <img src="/images/about/smile-accueil.jpg" alt="Smile accueil" />
                         </div>
                         <div className="cta-split-content" data-aos="fade-left">
                             <h4>Appel à l'action</h4>
                             <h2>Prêt à découvrir la smile ?</h2>
                             <p>Ne tardez plus pour prendre soin de votre sourire. Contactez-nous dès aujourd'hui et bénéficiez de notre expertise professionnelle adaptée à vos besoins.</p>
-                            <a href="/contact" className="btn-pill-refined">Prendre un rendez-vous</a>
+                            <Link to="/appointment" className="btn-pill-refined">Prendre un rendez-vous</Link>
                         </div>
                     </div>
                 </div>

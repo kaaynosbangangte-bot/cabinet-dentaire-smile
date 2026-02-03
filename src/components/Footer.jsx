@@ -46,16 +46,16 @@ function Footer() {
                     <div className="footer-column-refined">
                         <h4>Contact & Acces</h4>
                         <ul className="footer-contact-list-refined">
-                            <li><FiPhone /> <span>01 23 45 67 89</span></li>
-                            <li><FiMail /> <span>contact@smile.fr</span></li>
-                            <li><FiMapPin /> <span>123 Rue de la Santé, Paris</span></li>
-                            <li><FiClock /> <span>Lun - Ven: 09h - 19h</span></li>
+                            <li><FiPhone /> <span>+237 233 44 45 68 / +237 675 06 99 63</span></li>
+                            <li><FiMail /> <span>cabinetssmile@yahoo.com</span></li>
+                            <li><FiMapPin /> <span>Bafoussam, Cameroun</span></li>
+                            <li><FiClock /> <span>Ouvert 24h/24 & 7j/7</span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="footer-bottom-refined">
-                    <p>© 2026 Cabinet Dentaire Smile. Tous droits réservés. Créé avec passion pour votre sourire.</p>
+                    <p>© 2026 Cabinet Dentaire Smile. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>

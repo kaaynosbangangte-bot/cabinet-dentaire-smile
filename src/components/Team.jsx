@@ -1,24 +1,89 @@
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 function Team() {
     const team = [
         {
-            name: 'Dr. Sarah BERDAH',
+            name: 'Dr. BOUTCHOUANG Raoul',
             role: 'Chirurgien-Dentiste',
-            img: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600&h=600&fit=crop',
-            oncdc: '12345/A'
+            img: '/images/team/dr-boutchouang-raoul.jpg',
+            oncdc: '257'
         },
         {
-            name: 'Dr. Jean-Philippe BERDAH',
-            role: 'Orthodontiste Spécialisé',
-            img: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&h=600&fit=crop',
-            oncdc: '67890/B'
+            name: 'Dr. SAMEN Hermann',
+            role: 'Chirurgien-Dentiste',
+            img: '/images/team/dr-samen-hermann.jpg',
+            oncdc: '361'
         },
         {
-            name: 'Dr. Laura OIKNINE',
-            role: 'Expert en Implantologie',
-            img: 'https://images.unsplash.com/photo-1559839734-2b71f15367ef?w=600&h=600&fit=crop',
-            oncdc: '54321/C'
+            name: 'Dr. MAGOUOH Sorèle',
+            role: 'Chirurgien-Dentiste',
+            img: '/images/team/dr-magouoh-sorele.jpg',
+            oncdc: '383'
+        },
+        {
+            name: 'Dr. MANYA Laetitia',
+            role: 'Chirurgien-Dentiste',
+            img: '/images/team/dr-manya-laetitia.jpg',
+            oncdc: '633'
+        },
+        {
+            name: 'Dr. WANANG Eva',
+            role: 'Chirurgien-Dentiste',
+            img: '/images/team/dr-wanang-eva.jpg',
+            oncdc: '1120'
+        },
+        {
+            name: 'Dr. SIMO Arthur',
+            role: 'Chirurgien-Dentiste',
+            img: '/images/team/dr-simo-arthur.jpg',
+            oncdc: '1121'
+        },
+        {
+            name: 'Mlle ATONFACK Stéphanie Laure',
+            role: 'Assistante Administrative - Comptable',
+            img: '/images/team/mlle-atonfack-stephanie.jpg',
+            oncdc: null
+        },
+        {
+            name: 'Mlle ANNA SEEM',
+            role: 'Assistante Administrative - Comptable',
+            img: '/images/team/mlle-anna-seem.jpg',
+            oncdc: null
+        },
+        {
+            name: 'Mlle METCHOUAGUI Blandine',
+            role: 'Assistante Administrative - Comptable',
+            img: '/images/team/mlle-metchouagui-blandine.jpg',
+            oncdc: null
+        },
+        {
+            name: 'Mme MAWA Caroline',
+            role: 'Assistante Dentaire',
+            img: '/images/team/mme-mawa-caroline.jpg',
+            oncdc: null
+        },
+        {
+            name: 'Mme DOUGLA Christelle',
+            role: 'Assistante Dentaire',
+            img: '/images/team/mme-dougla-christelle.jpg',
+            oncdc: null
+        },
+        {
+            name: 'Mme DONFACK Esther',
+            role: 'Assistante Dentaire',
+            img: '/images/team/mme-donfack-esther.jpg',
+            oncdc: null
+        },
+        {
+            name: 'Mme ADIFFO Valoide',
+            role: 'Assistante Dentaire',
+            img: '/images/team/mme-adiffo-valoide.jpg',
+            oncdc: null
         }
     ]
 
@@ -30,31 +95,38 @@ function Team() {
                     <h2 className="team-title-refined">Des experts à votre service</h2>
                 </div>
 
-                <div className="team-grid-refined">
+                <Swiper
+                    modules={[Autoplay, Navigation, Pagination]}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    autoplay={{ delay: 3500, disableOnInteraction: false }}
+                    navigation={true}
+                    pagination={{ clickable: true }}
+                    breakpoints={{
+                        640: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 }
+                    }}
+                    className="team-swiper"
+                    data-aos="fade-up"
+                >
                     {team.map((member, index) => (
-                        <div
-                            key={index}
-                            className="team-card-refined"
-                            data-aos="fade-up"
-                            data-aos-delay={index * 100}
-                        >
-                            <div className="team-image-refined">
-                                <img src={member.img} alt={member.name} />
+                        <SwiperSlide key={index}>
+                            <div className="team-card-refined">
+                                <div className="team-image-refined">
+                                    <img src={member.img} alt={member.name} />
+                                </div>
+                                <h3 className="team-name-refined">{member.name}</h3>
+                                <p className="team-role-refined">{member.role}</p>
+                                {member.oncdc && <p className="team-reg-refined">ONCDC N° {member.oncdc}</p>}
+                                <div className="team-socials-refined">
+                                    <a href="#" className="social-icon-refined"><FiFacebook /></a>
+                                    <a href="#" className="social-icon-refined"><FiTwitter /></a>
+                                    <a href="#" className="social-icon-refined"><FiInstagram /></a>
+                                </div>
                             </div>
-                            <h3 className="team-name-refined">{member.name}</h3>
-                            <p className="team-role-refined">{member.role}</p>
-                            <p className="team-reg-refined">ONCDC: {member.oncdc}</p>
-                            <div className="team-socials-refined">
-                                <a href="#" className="social-icon-refined"><FiFacebook /></a>
-                                <a href="#" className="social-icon-refined"><FiTwitter /></a>
-                                <a href="#" className="social-icon-refined"><FiInstagram /></a>
-                            </div>
-                        </div>
+                        </SwiperSlide>
                     ))}
-                </div>
-                <div className="team-footer-refined">
-                    <button className="btn-team">Voir plus</button>
-                </div>
+                </Swiper>
             </div>
         </section>
     )

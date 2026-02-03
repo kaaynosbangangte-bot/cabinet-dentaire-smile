@@ -44,28 +44,28 @@ function Contact() {
                                 <div className="contact-icon-refined"><FiPhone /></div>
                                 <div className="contact-text-refined">
                                     <strong>Téléphone</strong>
-                                    <span>01 23 45 67 89</span>
+                                    <span>+237 233 44 45 68</span>
                                 </div>
                             </div>
                             <div className="contact-item-refined">
                                 <div className="contact-icon-refined"><FiMail /></div>
                                 <div className="contact-text-refined">
                                     <strong>Email</strong>
-                                    <span>contact@smile.fr</span>
+                                    <span>cabinetssmile@yahoo.com</span>
                                 </div>
                             </div>
                             <div className="contact-item-refined">
                                 <div className="contact-icon-refined"><FiMapPin /></div>
                                 <div className="contact-text-refined">
                                     <strong>Adresse</strong>
-                                    <span>123 Rue de la Santé, Paris</span>
+                                    <span>Bafoussam, Cameroun</span>
                                 </div>
                             </div>
                             <div className="contact-item-refined">
                                 <div className="contact-icon-refined"><FiClock /></div>
                                 <div className="contact-text-refined">
                                     <strong>Horaires</strong>
-                                    <span>Lun - Ven: 09h - 19h</span>
+                                    <span>Ouvert 24h/24 & 7j/7</span>
                                 </div>
                             </div>
                         </div>

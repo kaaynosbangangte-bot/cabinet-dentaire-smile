@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function About() {
     return (
         <section className="about" id="apropos">
@@ -19,11 +21,11 @@ function About() {
                             confort et professionnalisme pour des traitements sur
                             mesure d'une qualité irréprochable.
                         </p>
-                        <a href="#contact" className="btn-about">Voir plus</a>
+                        <Link to="/apropos" className="btn-about">Voir plus</Link>
                     </div>
                     <div className="about-image-refined" data-aos="fade-up" data-aos-delay="200">
                         <img
-                            src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80"
+                            src="/images/about/about-cabinet.jpg"
                             alt="Cabinet Dentaire Smile"
                             className="img-rounded"
                         />

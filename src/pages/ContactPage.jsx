@@ -23,10 +23,10 @@ function ContactPage() {
                             </p>
                             <div className="contact-methods">
                                 <div className="method-item">
-                                    <FiMail /> <span>Cabinetssmile@yahoo.com</span>
+                                    <FiMail /> <span>cabinetssmile@yahoo.com</span>
                                 </div>
                                 <div className="method-item">
-                                    <FiPhone /> <span>233 444 568</span>
+                                    <FiPhone /> <span>+237 233 44 45 68</span>
                                 </div>
                             </div>
                         </div>
@@ -39,8 +39,8 @@ function ContactPage() {
                                 <li><FiCheckCircle /> Dimanche et jours fériés sur RDV</li>
                             </ul>
                             <div className="urgency-box">
-                                <strong>Urgence 24h/24</strong>
-                                <span>Au 691 635 893 / 675 069 963</span>
+                                <strong>Urgence 24h/24 & 7j/7</strong>
+                                <span>+237 691 63 58 93</span>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ function ContactPage() {
                 <div className="container">
                     <div className="form-split-grid">
                         <div className="form-image-container" data-aos="fade-right">
-                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Cabinet Office" />
+                            <img src="/images/contact/cabinet-office.jpg" alt="Cabinet Office" />
                         </div>
                         <div className="form-side" data-aos="fade-left">
                             <h4>Formulaire de contact</h4>
@@ -72,7 +72,7 @@ function ContactPage() {
                                 <div className="form-group-refined">
                                     <textarea placeholder="Message" rows="5" required></textarea>
                                 </div>
-                                <button type="submit" className="btn-pill-refined">Envoyer le message</button>
+                                <button type="submit" className="btn-pill-refined btn-contact-submit">Envoyer le message</button>
                             </form>
                         </div>
                     </div>

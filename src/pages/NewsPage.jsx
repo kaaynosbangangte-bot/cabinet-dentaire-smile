@@ -2,32 +2,32 @@ const newsArticles = [
     {
         title: "Nouvelle technologie pour des soins plus confortables",
         description: "Nous avons équipé la clinique d'un nouvel appareil de radiographie 3D, pour des diagnostics précis et plus rapides.",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop"
+        image: "/images/news/article-1.jpg"
     },
     {
-        title: "Nouvelle technologie pour des soins plus confortables",
-        description: "Nous avons équipé la clinique d'un nouvel appareil de radiographie 3D, pour des diagnostics précis et plus rapides.",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop"
+        title: "Guide complet pour un sourire éclatant",
+        description: "Découvrez les rituels quotidiens et les soins professionnels pour maintenir une blancheur naturelle et une santé buccale parfaite.",
+        image: "/images/news/article-2.jpg"
     },
     {
-        title: "Nouvelle technologie pour des soins plus confortables",
-        description: "Nous avons équipé la clinique d'un nouvel appareil de radiographie 3D, pour des diagnostics précis et plus rapides.",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop"
+        title: "L'implantologie : une solution de vie",
+        description: "Les technologies modernes nous permettent aujourd'hui de restaurer votre sourire de manière durable, indolore et esthétique.",
+        image: "/images/news/article-3.jpg"
     },
     {
-        title: "Nouvelle technologie pour des soins plus confortables",
-        description: "Nous avons équipé la clinique d'un nouvel appareil de radiographie 3D, pour des diagnostics précis et plus rapides.",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop"
+        title: "Orthodontie invisible pour adultes",
+        description: "Redécouvrez le plaisir de sourire grâce à nos solutions de bagues invisibles, alliant discrétion absolue et efficacité remarquable.",
+        image: "/images/news/article-4.jpg"
     },
     {
-        title: "Nouvelle technologie pour des soins plus confortables",
-        description: "Nous avons équipé la clinique d'un nouvel appareil de radiographie 3D, pour des diagnostics précis et plus rapides.",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop"
+        title: "Prévention dentaire pour toute la famille",
+        description: "Des conseils pratiques et des soins préventifs adaptés à chaque âge pour garantir une santé bucco-dentaire optimale.",
+        image: "/images/news/article-5.jpg"
     },
     {
-        title: "Nouvelle technologie pour des soins plus confortables",
-        description: "Nous avons équipé la clinique d'un nouvel appareil de radiographie 3D, pour des diagnostics précis et plus rapides.",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop"
+        title: "Les avancées en dentisterie esthétique",
+        description: "Découvrez comment les nouvelles techniques de blanchiment et de facettes peuvent transformer votre sourire en toute sécurité.",
+        image: "/images/news/article-6.jpg"
     }
 ]
 

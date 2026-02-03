@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function CTA() {
     return (
         <section className="cta-refined">
@@ -9,9 +11,9 @@ function CTA() {
                     <p className="cta-description-refined">
                         Prenez rendez-vous avec notre équipe pour des soins dentaires de qualité. Nous sommes à votre écoute pour répondre à vos besoins et vous accompagner vers un sourire sain et éclatant
                     </p>
-                    <a href="#contact" className="btn-cta-refined">
-                        Rendez-nous visite aujourd’hui
-                    </a>
+                    <Link to="/appointment" className="btn-cta-refined">
+                        Prendre un rendez-vous
+                    </Link>
                 </div>
             </div>
         </section>
